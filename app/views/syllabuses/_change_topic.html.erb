@@ -1,0 +1,11 @@
+<a data-toggle="collapse" href="#topicForm">
+  <i class="glyphicon glyphicon-pencil">(change)</i>
+</a>
+</p>
+
+<div id="topicForm" class="collapse">
+  <%= form_for syllabus do |f| %>
+      <p><%= f.select :topic_id, options_from_collection_for_select(Topic.all, :id, :name)%></p>
+      <p><%= f.submit "Save changes", class: "btn btn-primary" %></p>
+  <% end %>
+</div>

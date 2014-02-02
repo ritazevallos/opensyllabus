@@ -29,6 +29,13 @@ class SyllabusesController < ApplicationController
   end
 
   def update
+    @syllabus = Syllabus.find(params[:id])
+    if @syllabus.update_attributes(syllabus_params)
+      flash[:success] = "Syllabus updated"
+      redirect_to @syllabus
+    else
+      redirect_to @syllabus
+    end
   end
 
   private

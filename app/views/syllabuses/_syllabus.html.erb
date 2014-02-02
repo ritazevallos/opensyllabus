@@ -1,5 +1,8 @@
 <li>
   <h1><%=syllabus.title%></h1>
+  <p>
+    In <%= link_to syllabus.topic.name, topic_path(syllabus.topic) %>
+    <%= render 'change_topic', syllabus: syllabus %>
   <%= link_to '(source)', syllabus.url %>
   <%= raw(syllabus.chnm_cache) %>
 </li>
