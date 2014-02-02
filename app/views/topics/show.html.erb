@@ -1,0 +1,26 @@
+<div class="row">
+  <aside class="span2">
+    <h1>Topics</h1>
+    <section>
+      <ul class="topicList">
+        <% @topics.each do |topic| %>
+            <%= render topic %>
+        <% end %>
+      </ul>
+    </section>
+  </aside>
+
+  <div class="span8 mainscroll">
+    <h1><%= @topic.name %></h1>
+    <%= will_paginate @syllabuses %>
+
+    <ul class="syllabuses">
+      <% @syllabuses.each do |syllabus| %>
+          <%= render syllabus %>
+      <% end %>
+    </ul>
+
+    <%= will_paginate @syllabuses %>
+  </div>
+</div>
+

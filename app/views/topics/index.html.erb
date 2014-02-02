@@ -1,0 +1,14 @@
+<div class="mainpage center hero-unit">
+  <h1><i>Open</i>Syllabus</h1>
+  <div class="btn-group">
+    <button type="button" class="btn btn-large dropdown-toggle" data-toggle="dropdown">
+      What would you like to learn about? <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu pull-right" role="menu">
+      <% @topics.each do |topic| %>
+          <%= render topic %>
+      <% end %>
+    </ul>
+  </div>
+
+</div>

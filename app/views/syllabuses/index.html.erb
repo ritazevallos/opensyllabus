@@ -1,0 +1,17 @@
+<div class="row">
+  <aside class="span2">
+    sidebar
+  </aside>
+  <div class="span8 mainscroll">
+    <%= will_paginate %>
+
+    <ul class="syllabuses">
+      <% @syllabuses.each do |syllabus| %>
+          <%= render syllabus %>
+      <% end %>
+    </ul>
+
+    <%= will_paginate %>
+  </div>
+</div>
+

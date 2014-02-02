@@ -1,0 +1,92 @@
+@import "bootstrap";
+
+/* universal */
+
+body {
+  background-color: white;
+  padding-top:40px;
+}
+
+h1{
+  font-weight:normal;
+  letter-spacing:-2px;
+}
+
+/* main page */
+
+.hero-unit{
+  text-align: center;
+  h1{
+    padding: 0px 0px 50px;
+  }
+  .dropdown-menu{
+    width: 100%;
+    text-align:left;
+  }
+  .btn{
+    width: 100%;
+  }
+  padding: 150px 0px 225px;
+}
+
+/* footer */
+footer {
+  font-size:10px;
+  margin-top: 50px;
+  padding-top: 10px;
+  border-top: 1px solid white;
+  color: grey;
+  clear:both;
+  small{
+    float:left;
+  }
+  ul {
+    float:right;
+    list-style:none;
+    margin-right:10px;
+    li {
+      float:left;
+      margin-left:5px;
+    }
+  }
+}
+
+
+/* results */
+
+.syllabuses{
+  list-style:none;
+  margin:0;
+  li {
+    border-bottom: 1px solid lightgrey;
+    padding-bottom:20px;
+    margin-bottom: 50px;
+    list-style: none;
+  }
+}
+
+.mainscroll{
+  padding: 20px;
+}
+
+aside{
+  margin-top:100px;
+  h1{
+    font-size:20px;
+    letter-spacing: 0;
+    font-weight:normal;
+    margin:0;
+    padding:0;
+  }
+}
+
+section{
+  margin-bottom: 50px;
+}
+
+.topicList{
+  list-style:none;
+  margin:0;
+  padding:0;
+
+}
